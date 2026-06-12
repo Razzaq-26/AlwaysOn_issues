@@ -2,9 +2,9 @@
 
 --fisrt window failover cluster
 
-    1.nodes maybe down
-    2.quorum configuration
-    3.network issues
+    --1.nodes maybe down
+    --2.quorum configuration
+    --3.network issues
 
 --endpoint permission
 
@@ -119,7 +119,6 @@
 
 --4. Look for suspended data movement
 
-
     SELECT
     DB_NAME(database_id) AS DatabaseName,
     is_suspended,
@@ -127,6 +126,3 @@
     FROM sys.dm_hadr_database_replica_states;
 
    If is_suspended = 1, note the suspend_reason_desc.
-
-
- 
