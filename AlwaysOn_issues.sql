@@ -63,8 +63,7 @@
 
 --- endpoint name 
 
-
-	SELECT
+    SELECT
     e.name,
     e.state_desc,
     t.port
